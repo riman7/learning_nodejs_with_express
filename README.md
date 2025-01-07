@@ -2,6 +2,8 @@
 
 Welcome to my **Learning Node.js with Express** repository! This is a personal project to document my journey as I learn and explore the fundamentals of backend development using **Node.js** and **Express.js**.  
 
+> **Note:** This repository is a work in progress. I am actively learning and updating the content. It is not yet complete, but feel free to explore and contribute!
+
 The repository includes hands-on examples, solutions to practice problems, and small projects to solidify my understanding.
 
 ---
