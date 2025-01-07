@@ -1,0 +1,21 @@
+A built-in module in Node.js refers to a module that is natively available as part of the Node.js runtime environment. These modules are pre-installed and do not require separate installation via package managers like npm.
+These modules are designed to handle common needs for server-side development, such as interacting with files, managing network connections, performing encryption, and more. Since they come bundled with Node.js, they are always available and ready to use without requiring any additional dependencies.
+
+Examples of Built-In Modules:
+1. http: Used for creating HTTP servers and making HTTP requests.
+2. fs (File System): Allows interaction with the file system (read, write, delete files).
+3. path: Provides utilities for handling and manipulating file paths.
+4. url: Used to parse and resolve URLs.
+5. events: Implements an EventEmitter for event-driven programming.
+6. os: Provides operating system-related utility functions.
+7. crypto: Provides cryptographic functionality for hashing, encryption, and decryption.
+8. process: Provides information about the current Node.js process.
+9. util: Includes utility functions like string formatting and promisifying callback-based functions.
+10. stream: Used to work with data streams (e.g., file streams, HTTP requests).
+
+Note there is much more to explore in "https://nodejs.org/docs/latest/api/"
+
+Example: 
+const os = require('os');
+console.log(os.userInfo());
+console.log(`Uptime: ${os.uptime()} seconds`);
