@@ -63,7 +63,7 @@ This repository is organized into sections covering the following topics:
 
 ---
 
-## Projects
+### Projects
 
 Here are some small projects included in this repository:
 ...
@@ -80,21 +80,18 @@ To clone and run the code in this repository, follow these steps:
    cd learning-nodejs-express
 
 Install dependencies:
-
-bash
-Copy code
+```bash
 npm install
+```
 Run the server:
-
-bash
-Copy code
+```bash
 node app.js
+```
 Open your browser or use a tool like Postman to test the server at:
 
-arduino
-Copy code
+```arduino
 http://localhost:3000
-
+```
 Resources
 Here are some resources I’m using to learn Node.js and Express.js:
 The Odin Project
