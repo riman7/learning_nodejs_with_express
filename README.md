@@ -45,6 +45,7 @@ This repository is organized into sections covering the following topics:
 ### **Node.js Basics**
 - Introduction to Node.js
 - Modules
+- Built-in Modules
 
 ---
 
