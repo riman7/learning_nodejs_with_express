@@ -16,7 +16,7 @@ readFile('./built-in_module.txt', 'utf-8', (err, result)=>{
         console.log(err);
         return;
     } 
-    console.log(result)
+    console.log(result);
 });
 writeFile(
     './write.txt', "Hello World;", (err, result)=>{
