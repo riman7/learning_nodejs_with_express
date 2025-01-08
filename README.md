@@ -44,24 +44,7 @@ This repository is organized into sections covering the following topics:
 
 ### **Node.js Basics**
 - Introduction to Node.js
-- Understanding the Event Loop
-- File System (fs module)
-- Asynchronous Programming (Callbacks, Promises, and Async/Await)
-- Building a Simple HTTP Server
-
-### **Express.js Basics**
-- Setting up an Express Application
-- Middleware and Routing
-- Query Parameters and URL Parameters
-- Serving Static Files
-- Handling POST Requests with Body Parsers
-
-### **Advanced Concepts**
-- RESTful APIs
-- Authentication and Authorization (e.g., JWT)
-- Connecting to a Database (MongoDB)
-- Error Handling
-- Deploying Node.js Applications
+- Modules
 
 ---
 
