@@ -93,7 +93,6 @@ Acknowledgments
 Special thanks to the open-source community and the creators of Node.js and Express.js for making backend development accessible and enjoyable.
 
 Happy Coding! 🚀
-```yaml
-This **README** provides clarity and structure, making your repository look professional and informative. Let me know if you want further customization!
+
 
 
