@@ -46,6 +46,7 @@ This repository is organized into sections covering the following topics:
 - Introduction to Node.js
 - Modules
 - Built-in Modules(os, fs(sync, async), path, http)
+- npm(node package manager)
 
 ---
 
@@ -62,7 +63,7 @@ To clone and run the code in this repository, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/learning-nodejs-express.git
+   git clone https://github.com/riman7/learning-nodejs-express.git
    cd learning-nodejs-express
 
 Install dependencies:
@@ -78,7 +79,38 @@ Open your browser or use a tool like Postman to test the server at:
 ```arduino
 http://localhost:3000
 ```
-Resources
+
+## npm
+In general, npm is bundled with Node.js, so installing Node.js usually installs npm as well.
+
+# Check if npm is Installed
+You can verify if npm is installed by running the following command in the terminal:
+
+```bash
+npm -v
+```
+
+# Handling Errors
+If you encounter an error like this:
+"npm : cannot be loaded because running scripts is disabled on this system."
+It likely means that your system's PowerShell Execution Policy is set to restrict script execution, which prevents npm from running in PowerShell.
+
+To fix this, check your current execution policy by running:
+
+```bash
+Get-ExecutionPolicy
+```
+If it returns Restricted, temporarily allow script execution by running:
+
+```bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+```
+This change applies only to the current PowerShell session and does not permanently modify your system settings.
+
+# Reinstall Node.js (if npm is missing)
+If npm is not installed on your system, reinstall Node.js from the Node.js official website. npm will be included with the installation.
+
+## Resources
 Here are some resources I’m using to learn Node.js and Express.js:
 The Odin Project
 freeCodeCamp - Backend Development
@@ -86,10 +118,10 @@ Node.js Official Documentation
 Express.js Official Documentation
 Traversy Media YouTube Tutorials
 
-Contributions
+## Contributions
 This repository is primarily for my personal learning, but suggestions and contributions are welcome! Feel free to fork this repository or open an issue for any recommendations.
 
-Acknowledgments
+## Acknowledgments
 Special thanks to the open-source community and the creators of Node.js and Express.js for making backend development accessible and enjoyable.
 
 Happy Coding! 🚀
