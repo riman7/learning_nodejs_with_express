@@ -63,8 +63,7 @@ To clone and run the code in this repository, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/riman7/learning-nodejs-express.git
-   cd learning-nodejs-express
+   git clone https://github.com/riman7/learning_nodejs_with_express.git
 
 Install dependencies:
 ```bash
@@ -81,7 +80,7 @@ http://localhost:3000
 ```
 
 ## npm
-In general, npm is bundled with Node.js, so installing Node.js usually installs npm as well.
+In general, npm is bundled with Node.js, **so installing Node.js usually installs npm as well.**
 
 # Check if npm is Installed
 You can verify if npm is installed by running the following command in the terminal:
@@ -110,7 +109,7 @@ This change applies only to the current PowerShell session and does not permanen
 # Reinstall Node.js (if npm is missing)
 If npm is not installed on your system, reinstall Node.js from the Node.js official website. npm will be included with the installation.
 
-## Resources
+### Resources
 Here are some resources I’m using to learn Node.js and Express.js:
 The Odin Project
 freeCodeCamp - Backend Development
@@ -118,10 +117,10 @@ Node.js Official Documentation
 Express.js Official Documentation
 Traversy Media YouTube Tutorials
 
-## Contributions
+### Contributions
 This repository is primarily for my personal learning, but suggestions and contributions are welcome! Feel free to fork this repository or open an issue for any recommendations.
 
-## Acknowledgments
+### Acknowledgments
 Special thanks to the open-source community and the creators of Node.js and Express.js for making backend development accessible and enjoyable.
 
 Happy Coding! 🚀
