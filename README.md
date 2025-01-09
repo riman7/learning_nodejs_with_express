@@ -1,4 +1,4 @@
-# learning_nodejs_with_express
+# Learning Nodejs with Expressjs
 > **Note:** This repository is a work in progress. I am actively learning and updating the content. It is not yet complete, but feel free to explore and contribute!
 
 Welcome to my **Learning Node.js with Express** repository! This is a personal project to document my journey as I learn and explore the fundamentals of backend development using **Node.js** and **Express.js**.  
@@ -47,6 +47,8 @@ This repository is organized into sections covering the following topics:
 - Modules
 - Built-in Modules(os, fs(sync, async), path, http)
 - npm(node package manager)
+- Event Loop
+
 
 ---
 
@@ -92,7 +94,7 @@ npm -v
 
 # Handling Errors
 If you encounter an error like this:
-"npm : cannot be loaded because running scripts is disabled on this system."
+> "npm : cannot be loaded because running scripts is disabled on this system."
 It likely means that your system's PowerShell Execution Policy is set to restrict script execution, which prevents npm from running in PowerShell.
 
 To fix this, check your current execution policy by running:
@@ -133,13 +135,23 @@ npm install -g nodemon
 ```
 You can now use nodemon globally in any project.
 
+```bash
+npm install
+```
+will install all the dependency required for the project which are mentiones in the package.json file.
+
+# Uninstall npn package
+```bash
+npm uninstall <package-name>
+```
+
 ### Resources
 Here are some resources I’m using to learn Node.js and Express.js:
-The Odin Project
-freeCodeCamp - Backend Development
-Node.js Official Documentation
-Express.js Official Documentation
-Traversy Media YouTube Tutorials
+1. freeCodeCamp - Backend Development
+2. Node.js Official Documentation
+3. Express.js Official Documentation
+4. Chat-gpt
+
 
 ### Contributions
 This repository is primarily for my personal learning, but suggestions and contributions are welcome! Feel free to fork this repository or open an issue for any recommendations.

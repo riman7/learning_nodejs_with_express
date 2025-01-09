@@ -1,0 +1,15 @@
+{
+  "name": "learning_nodejs_with_express",
+  "version": "1.0.0",
+  "description": "> **Note:** This repository is a work in progress. I am actively learning and updating the content. It is not yet complete, but feel free to explore and contribute!",
+  "main": "hello_world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
