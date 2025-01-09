@@ -80,6 +80,7 @@ http://localhost:3000
 ```
 
 ## npm
+npm (Node Package Manager) is a tool that comes with Node.js, used to install, manage, and share JavaScript packages.
 In general, npm is bundled with Node.js, **so installing Node.js usually installs npm as well.**
 
 # Check if npm is Installed
@@ -108,6 +109,29 @@ This change applies only to the current PowerShell session and does not permanen
 
 # Reinstall Node.js (if npm is missing)
 If npm is not installed on your system, reinstall Node.js from the Node.js official website. npm will be included with the installation.
+
+#  Methods to Install npm Packages
+1. Local Installation:
+Installs the package in the current project directory and adds it to the node_modules folder. This is used for project-specific dependencies.
+```bash
+npm install <package-name>
+```
+Example:
+```bash
+npm install express
+```
+The package will only be accessible within the project.
+
+2. Global Installation:
+Installs the package globally, making it accessible system-wide through the terminal. This is used for CLI tools or utilities.
+```bash
+npm install -g <package-name>
+```
+Example:
+```bash
+npm install -g nodemon
+```
+You can now use nodemon globally in any project.
 
 ### Resources
 Here are some resources I’m using to learn Node.js and Express.js:
