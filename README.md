@@ -111,7 +111,7 @@ This change applies only to the current PowerShell session and does not permanen
 If npm is not installed on your system, reinstall Node.js from the Node.js official website. npm will be included with the installation.
 
 #  Methods to Install npm Packages
-1. Local Installation:
+1. ***Local Installation:***
 Installs the package in the current project directory and adds it to the node_modules folder. This is used for project-specific dependencies.
 ```bash
 npm install <package-name>
@@ -122,7 +122,7 @@ npm install express
 ```
 The package will only be accessible within the project.
 
-2. Global Installation:
+2. ***Global Installation:***
 Installs the package globally, making it accessible system-wide through the terminal. This is used for CLI tools or utilities.
 ```bash
 npm install -g <package-name>
