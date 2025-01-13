@@ -30,7 +30,7 @@ Through this repository, I aim to:
 
 ---
 
-# Why Node.js and Express.js?
+## Why Node.js and Express.js?
 
 Here’s why I chose to learn Node.js and Express.js:
 - **Fast and Scalable**: Node.js is designed for building high-performance, scalable applications.
@@ -69,28 +69,29 @@ Here are some small projects included in this repository:
 
 To clone and run the code in this repository, follow these steps:
 
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone https://github.com/riman7/learning_nodejs_with_express.git
+   ```
 
 Install dependencies:
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 Run the server:
-```bash
-node app.js
-```
+   ```bash
+   node app.js
+   ```
 Open your browser or use a tool like Postman to test the server at:
 
-```arduino
-http://localhost:3000
-```
+
 
 ---
 
 # npm
-npm (Node Package Manager) is a tool that comes with Node.js, used to install, manage, and share JavaScript packages.
+npm (Node Package Manager) is a tool that comes with Node.js, used to install, manage, and share JavaScript packages.   ```arduino
+   http://localhost:3000
+   ```
 In general, npm is bundled with Node.js, **so installing Node.js usually installs npm as well.**
 
 ## Check if npm is Installed
@@ -117,7 +118,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 ```
 This change applies only to the current PowerShell session and does not permanently modify your system settings.
 
-## Reinstall Node.js (if npm is missing)
+### Reinstall Node.js (if npm is missing)
 If npm is not installed on your system, reinstall Node.js from the Node.js official website. npm will be included with the installation.
 
 ##  Methods to Install npm Packages
@@ -143,6 +144,7 @@ npm install -g nodemon
 ```
 You can now use nodemon globally in any project.
 
+***Install Required Dependencies***
 ```bash
 npm install
 ```
@@ -165,12 +167,33 @@ However, in Node.js, the Event Loop enables non-blocking and asynchronous operat
 
 ### Execuation order:
  Event Loop is composed of the following six phases, which are repeated for as long as the application still has code that needs to be executed:
-1. Timers
-2. I/O Callbacks
-3. Waiting / Preparation
-4. I/O Polling
-5. setImmediate() callbacks
-6. Close events
+1. ***Timers*** (eg. setTimeout, setInterval(if their timer is finished))
+2. ***I/O Callbacks***
+3. ***Waiting / Preparation***
+4. ***I/O Polling***
+5. ***setImmediate() callbacks***
+6. ***Close events***
+
+Example Execution Order
+```javascript
+console.log('Start');
+
+setTimeout(() => console.log('setTimeout'), 0);
+setImmediate(() => console.log('setImmediate'));
+Promise.resolve().then(() => console.log('Promise'));
+process.nextTick(() => console.log('Next Tick'));
+
+console.log('End');
+```
+**Output:**
+   Start (Synchronous)
+   End (Synchronous)
+   Next Tick (process.nextTick)
+   Promise (Resolved Promise)
+   setImmediate (Macrotask - Check Phase)
+   setTimeout (Macrotask - Timer Phase)
+
+--
 
 # Resources
 Here are some resources I’m using to learn Node.js and Express.js:
