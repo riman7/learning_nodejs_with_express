@@ -185,13 +185,13 @@ process.nextTick(() => console.log('Next Tick'));
 
 console.log('End');
 ```
-**Output:**
-Start (Synchronous)  
-End (Synchronous)  
-Next Tick (process.nextTick)  
-Promise (Resolved Promise)  
-setImmediate (Macrotask - Check Phase)  
-setTimeout (Macrotask - Timer Phase)
+**Output:**  
+   Start (Synchronous)  
+   End (Synchronous)  
+   Next Tick (process.nextTick)  
+   Promise (Resolved Promise)  
+   setImmediate (Macrotask - Check Phase)  
+   setTimeout (Macrotask - Timer Phase)
 
 ---
 
