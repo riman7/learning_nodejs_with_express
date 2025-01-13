@@ -186,14 +186,14 @@ process.nextTick(() => console.log('Next Tick'));
 console.log('End');
 ```
 **Output:**
-   Start (Synchronous)
-   End (Synchronous)
-   Next Tick (process.nextTick)
-   Promise (Resolved Promise)
-   setImmediate (Macrotask - Check Phase)
-   setTimeout (Macrotask - Timer Phase)
+Start (Synchronous)  
+End (Synchronous)  
+Next Tick (process.nextTick)  
+Promise (Resolved Promise)  
+setImmediate (Macrotask - Check Phase)  
+setTimeout (Macrotask - Timer Phase)
 
---
+---
 
 # Resources
 Here are some resources I’m using to learn Node.js and Express.js:
