@@ -155,7 +155,7 @@ However, in Node.js, the Event Loop enables non-blocking and asynchronous operat
 - The Event Loop, a part of *libuv* that coordinates the execution of asynchronous and synchronous code in Node.js, ensuring smooth operation despite JavaScript's single-threaded nature.
 - This mechanism allows Node.js to handle asynchronous tasks efficiently while maintaining the single-threaded nature of JavaScript.
 
-# Execuation order:
+### Execuation order:
  Event Loop is composed of the following six phases, which are repeated for as long as the application still has code that needs to be executed:
 1. Timers
 2. I/O Callbacks
