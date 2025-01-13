@@ -1,7 +1,8 @@
 # Learning Nodejs with Expressjs
 > **Note:** This repository is a work in progress. I am actively learning and updating the content. It is not yet complete, but feel free to explore and contribute!
 
-Welcome to my **Learning Node.js with Express** repository! This is a personal project to document my journey as I learn and explore the fundamentals of backend development using **Node.js** and **Express.js**.  
+Welcome to my **Learning Node.js with Express** repository! This is a personal project to document my journey as I learn and explore the fundamentals of backend development using **Node.js** and **Express.js**. 
+This is more like my notebook while learning **Node.js** and **Express.js**. 
 
 
 The repository includes hands-on examples, solutions to practice problems, and small projects to solidify my understanding.
@@ -38,16 +39,16 @@ Here’s why I chose to learn Node.js and Express.js:
 
 ---
 
-## Topics Covered
+### Topics Covered
 
 This repository is organized into sections covering the following topics:
 
-### **Node.js Basics**
-- Introduction to Node.js
-- Modules
-- Built-in Modules(os, fs(sync, async), path, http)
-- npm(node package manager)
-- Event Loop
+- **Node.js Basics**
+  - Introduction to Node.js
+  - Modules
+  - Built-in Modules(os, fs(sync, async), path, http)
+  - npm(node package manager)
+  - [Event Loop](#event-loop)
 
 
 ---
@@ -145,7 +146,7 @@ will install all the dependency required for the project which are mentiones in 
 npm uninstall <package-name>
 ```
 
-### Event loop
+## Event loop
 JavaScript is blocking, synchronous, and single-threaded by design. This means JavaScript normally executes code line by line in a single thread.
 However, in Node.js, the Event Loop enables non-blocking and asynchronous operations.
 - Asynchronous methods are offloaded to libuv during execution.
@@ -154,8 +155,14 @@ However, in Node.js, the Event Loop enables non-blocking and asynchronous operat
 - The Event Loop, a part of *libuv* that coordinates the execution of asynchronous and synchronous code in Node.js, ensuring smooth operation despite JavaScript's single-threaded nature.
 - This mechanism allows Node.js to handle asynchronous tasks efficiently while maintaining the single-threaded nature of JavaScript.
 
-## Execuation order:
-
+# Execuation order:
+ Event Loop is composed of the following six phases, which are repeated for as long as the application still has code that needs to be executed:
+1. Timers
+2. I/O Callbacks
+3. Waiting / Preparation
+4. I/O Polling
+5. setImmediate() callbacks
+6. Close events
 
 ### Resources
 Here are some resources I’m using to learn Node.js and Express.js:
