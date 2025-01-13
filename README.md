@@ -39,7 +39,7 @@ Here’s why I chose to learn Node.js and Express.js:
 
 ---
 
-### Topics Covered
+## Topics Covered
 
 This repository is organized into sections covering the following topics:
 
@@ -53,10 +53,10 @@ This repository is organized into sections covering the following topics:
 
 ---
 
-### Projects
+## Projects
 
 Here are some small projects included in this repository:
-...
+> Will be updated soon...
 
 ---
 
