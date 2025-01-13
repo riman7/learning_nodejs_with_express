@@ -145,6 +145,18 @@ will install all the dependency required for the project which are mentiones in 
 npm uninstall <package-name>
 ```
 
+### Event loop
+JavaScript is blocking, synchronous, and single-threaded by design. This means JavaScript normally executes code line by line in a single thread.
+However, in Node.js, the Event Loop enables non-blocking and asynchronous operations.
+- Asynchronous methods are offloaded to libuv during execution.
+- Once these operations are complete, their callbacks are added to the Event Loop for execution.
+- **libuv** is a C library that provides core non-blocking I/O functionality in Node.js, such as file I/O, networking, and timers.
+- The Event Loop, a part of *libuv* that coordinates the execution of asynchronous and synchronous code in Node.js, ensuring smooth operation despite JavaScript's single-threaded nature.
+- This mechanism allows Node.js to handle asynchronous tasks efficiently while maintaining the single-threaded nature of JavaScript.
+
+## Execuation order:
+
+
 ### Resources
 Here are some resources I’m using to learn Node.js and Express.js:
 1. freeCodeCamp - Backend Development
