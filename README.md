@@ -9,7 +9,7 @@ The repository includes hands-on examples, solutions to practice problems, and s
 
 ---
 
-## Table of Contents
+# Table of Contents
 1. [Introduction](#introduction)
 2. [Why Node.js and Express.js?](#why-nodejs-and-expressjs)
 3. [Topics Covered](#topics-covered)
@@ -19,7 +19,7 @@ The repository includes hands-on examples, solutions to practice problems, and s
 
 ---
 
-## Introduction
+# Introduction
 
 Node.js is a powerful, open-source runtime environment for executing JavaScript on the server side. Express.js is a minimalist web framework built on top of Node.js that simplifies creating web servers and APIs.
 
@@ -30,7 +30,7 @@ Through this repository, I aim to:
 
 ---
 
-## Why Node.js and Express.js?
+# Why Node.js and Express.js?
 
 Here’s why I chose to learn Node.js and Express.js:
 - **Fast and Scalable**: Node.js is designed for building high-performance, scalable applications.
@@ -39,7 +39,7 @@ Here’s why I chose to learn Node.js and Express.js:
 
 ---
 
-## Topics Covered
+# Topics Covered
 
 This repository is organized into sections covering the following topics:
 
@@ -53,14 +53,19 @@ This repository is organized into sections covering the following topics:
 
 ---
 
-## Projects
+# Projects
 
 Here are some small projects included in this repository:
+
+## Major Projects
+> Will be updated soon...
+
+## Minor Projects
 > Will be updated soon...
 
 ---
 
-## Setup and Usage
+# Setup and Usage
 
 To clone and run the code in this repository, follow these steps:
 
@@ -82,7 +87,9 @@ Open your browser or use a tool like Postman to test the server at:
 http://localhost:3000
 ```
 
-## npm
+---
+
+# npm
 npm (Node Package Manager) is a tool that comes with Node.js, used to install, manage, and share JavaScript packages.
 In general, npm is bundled with Node.js, **so installing Node.js usually installs npm as well.**
 
@@ -145,6 +152,7 @@ will install all the dependency required for the project which are mentiones in 
 ```bash
 npm uninstall <package-name>
 ```
+---
 
 ## Event loop
 JavaScript is blocking, synchronous, and single-threaded by design. This means JavaScript normally executes code line by line in a single thread.
@@ -164,7 +172,7 @@ However, in Node.js, the Event Loop enables non-blocking and asynchronous operat
 5. setImmediate() callbacks
 6. Close events
 
-### Resources
+# Resources
 Here are some resources I’m using to learn Node.js and Express.js:
 1. freeCodeCamp - Backend Development
 2. Node.js Official Documentation
@@ -172,10 +180,10 @@ Here are some resources I’m using to learn Node.js and Express.js:
 4. Chat-gpt
 
 
-### Contributions
+# Contributions
 This repository is primarily for my personal learning, but suggestions and contributions are welcome! Feel free to fork this repository or open an issue for any recommendations.
 
-### Acknowledgments
+# Acknowledgments
 Special thanks to the open-source community and the creators of Node.js and Express.js for making backend development accessible and enjoyable.
 
 Happy Coding! 🚀
