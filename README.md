@@ -167,7 +167,7 @@ However, in Node.js, the Event Loop enables non-blocking and asynchronous operat
 
 ### Execuation order:
 First of all, all synchronous tasks are executed.  
-Then, nextTick queue and then Promise queue. After that Event Loop starts.
+Then,[Micro tasks(nextTick and Promise)] nextTick queue and then Promise queue. After that Event Loop [Macro Tasks] starts.
  Event Loop is composed of the following six phases, which are repeated for as long as the application still has code that needs to be executed:
 1. ***Timers*** (eg. setTimeout, setInterval(if their timer is finished))
 2. ***I/O Callbacks***
@@ -187,6 +187,7 @@ process.nextTick(() => console.log('Next Tick'));
 
 console.log('End');
 ```
+
 **Output:**  
    Start (Synchronous)  
    End (Synchronous)  
@@ -194,6 +195,7 @@ console.log('End');
    Promise (Resolved Promise)  
    setImmediate (Macrotask - Check Phase)  
    setTimeout (Macrotask - Timer Phase)
+
 
 **Explaination:**
 - **Synchronous Code:** Executes first, in the order it's written.
