@@ -67,6 +67,10 @@ Here are some small projects included in this repository:
 
 # Setup and Usage
 
+## Install nodejs
+Go to http://nodejs.org/, download node.js installer and follow instructions. Mac OS, Windows, and Linux are supported.
+
+
 To clone and run the code in this repository, follow these steps:
 
 Clone the repository:
