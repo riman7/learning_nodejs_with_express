@@ -223,7 +223,7 @@ const myPromise = new Promise((resolve, reject) => {
     }
   });
 ```
-Once a promise is created, we can use .then() for handling success and .catch() for handling errors.
+Once a promise is created, we can use .then() for handling success and .catch() for handling errors..
 
 ```javascript
 myPromise
