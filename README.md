@@ -82,13 +82,6 @@ Install dependencies:
    ```bash
    npm install
    ```
-Run the server:
-   ```bash
-   node app.js
-   ```
-Open your browser or use a tool like Postman to test the server at:
-
-
 
 ---
 
