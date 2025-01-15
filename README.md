@@ -202,6 +202,38 @@ console.log('End');
 - **setImmediate:** Executes in the Check Phase of the event loop, after I/O tasks.
 ---
 
+## Understanding Promises in JavaScript
+
+A **Promise** is an object representing the eventual completion (or failure) of an asynchronous operation. It allows handling asynchronous operations in a cleaner and more manageable way compared to callbacks.
+
+### Key Points:
+- A promise represents a value that isn’t immediately available but will be in the future, after the asynchronous operation completes.
+- The promise guarantees that once it's resolved, it will either provide the result of the operation or indicate an error.
+
+### Example of Creating and Using a Promise
+
+```javascript
+// Creating a Promise
+const myPromise = new Promise((resolve, reject) => {
+    let success = true; // Change this to simulate success or failure
+    if (success) {
+      resolve("Operation was successful!"); // Fulfilling the promise
+    } else {
+      reject("Operation failed!"); // Rejecting the promise
+    }
+  });
+
+// Handling success and failure with .then() and .catch()
+myPromise
+  .then((message) => {
+    console.log(message); // Success: prints "Operation was successful!"
+  })
+  .catch((error) => {
+    console.error(error); // Failure: prints "Operation failed!"
+  });
+```
+---
+
 # Resources
 Here are some resources I’m using to learn Node.js and Express.js:
 1. freeCodeCamp - Backend Development
