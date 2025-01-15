@@ -252,8 +252,8 @@ async function func() {
 }
 func();
 ```
+[**CODE**](./basics/promise.js)
 
-[***CODE***](./basics/promise.js)
 ---
 
 # Resources
