@@ -222,8 +222,10 @@ const myPromise = new Promise((resolve, reject) => {
       reject("Operation failed!"); // Rejecting the promise
     }
   });
+```
+Once a promise is created, we can use .then() for handling success and .catch() for handling errors.
 
-// Handling success and failure with .then() and .catch()
+```javascript
 myPromise
   .then((message) => {
     console.log(message); // Success: prints "Operation was successful!"
