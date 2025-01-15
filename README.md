@@ -92,9 +92,8 @@ npm (Node Package Manager) is a tool that comes with Node.js, used to install, m
    http://localhost:3000
 ```
 
-In general, npm is bundled with Node.js, **so installing Node.js usually installs npm as well.**
-
 ## Check if npm is Installed
+In general, npm is bundled with Node.js, **so installing Node.js usually installs npm as well.**  
 You can verify if npm is installed by running the following command in the terminal:
 
 ```bash
@@ -150,7 +149,7 @@ npm install
 ```
 will install all the dependency required for the project which are mentiones in the package.json file.
 
-# Uninstall npn package
+## Uninstall npn package
 ```bash
 npm uninstall <package-name>
 ```
@@ -236,6 +235,22 @@ myPromise
   .catch((error) => {
     console.error(error); // Failure: prints "Operation failed!"
   });
+```
+
+To make it look simpler, we have **async** and **await**.
+The await keyword can only be used inside an async function. It pauses the execution of the async function and waits for the promise to resolve or reject.  
+Instead of above code, we can do:
+```javascript
+async function func() {
+    try{
+    msg = await myPromise;
+    console.log(msg);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+func();
 ```
 ---
 

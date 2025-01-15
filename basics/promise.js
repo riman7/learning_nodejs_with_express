@@ -13,10 +13,14 @@ const myPromise = new Promise((resolve, reject) => {
   });
 
 // Once a promise is created, we can use .then() for handling success and .catch() for handling errors.
+
 myPromise
-  .then((message) => {
-    console.log(message); // Success: prints "Operation was successful!"
+  .then((messagee) => {
+    console.log(messagee); // Success: prints "Operation was successful!"
   })
   .catch((error) => {
     console.error(error); // Failure: prints "Operation failed!"
   });
+
+// Using await:
+It pauses the execution of the async function and waits for the promise to resolve or reject.
