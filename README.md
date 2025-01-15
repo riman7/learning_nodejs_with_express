@@ -88,7 +88,7 @@ Install dependencies:
 # npm
 npm (Node Package Manager) is a tool that comes with Node.js, used to install, manage, and share JavaScript packages.   ```arduino
    http://localhost:3000
-   ```
+```
 In general, npm is bundled with Node.js, **so installing Node.js usually installs npm as well.**
 
 ## Check if npm is Installed
