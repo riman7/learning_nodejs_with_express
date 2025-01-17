@@ -23,4 +23,13 @@ myPromise
   });
 
 // Using await:
-It pauses the execution of the async function and waits for the promise to resolve or reject.
+async function func() {
+    try{
+    msg = await myPromise;
+    console.log(msg);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+func();

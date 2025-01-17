@@ -49,7 +49,8 @@ This repository is organized into sections covering the following topics:
   - [Built-in Modules(os, fs(sync, async), path, http)](./basics/module/built-in_module)
   - [npm(node package manager)](#npm) 
   - [Event Loop](#event-loop)
-
+  - [Promises](#understanding-promises-in-javascriptpromise)
+  - [Event]
 
 ---
 
@@ -253,6 +254,28 @@ async function func() {
 func();
 ```
 [**CODE**](./basics/promise.js)
+
+---
+## FAQ
+
+<details>
+  <summary><strong>What is this repository about?</strong></summary>
+  This repository is focused on learning Node.js and Express.js. It includes example code, explanations, and practice projects to help understand the concepts better.
+</details>
+
+<details>
+  <summary><strong>How do I run the project locally?</strong></summary>
+  1. Clone the repository: `git clone https://github.com/username/repo.git`  
+  2. Navigate to the project folder: `cd repo`  
+  3. Install dependencies: `npm install`  
+  4. Run the project: `npm start`
+</details>
+
+<details>
+  <summary><strong>Can I contribute to this repository?</strong></summary>
+  Yes, contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
+</details>
+
 
 ---
 
