@@ -256,26 +256,25 @@ func();
 [**CODE**](./basics/promise.js)
 
 ---
-## FAQ
+## JavaScript Concepts and Solutions
 
 <details>
-  <summary><strong>What is this repository about?</strong></summary>
-  This repository is focused on learning Node.js and Express.js. It includes example code, explanations, and practice projects to help understand the concepts better.
-</details>
+  <summary><strong>What does the <code>new</code> keyword do in JavaScript?</strong></summary>
+  The `new` keyword in JavaScript is used to create an instance of an object from a constructor function.  
+  It performs the following steps:
+  1. Creates a new empty object.
+  2. Sets the prototype of the new object to the prototype of the constructor function.
+  3. Calls the constructor function with the `this` keyword set to the new object.
+  4. Returns the new object unless the constructor explicitly returns a non-primitive value.
 
-<details>
-  <summary><strong>How do I run the project locally?</strong></summary>
-  1. Clone the repository: `git clone https://github.com/username/repo.git`  
-  2. Navigate to the project folder: `cd repo`  
-  3. Install dependencies: `npm install`  
-  4. Run the project: `npm start`
-</details>
+  Example:
+  ```javascript
+  function Person(name) {
+      this.name = name;
+  }
 
-<details>
-  <summary><strong>Can I contribute to this repository?</strong></summary>
-  Yes, contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
-</details>
-
+  const john = new Person("John");
+  console.log(john.name); // Output: John
 
 ---
 
