@@ -260,6 +260,7 @@ func();
 
 # HTTP Message
 An HTTP message is the communication format used in the HTTP protocol between a client (e.g., browser, API consumer) and a server. It comes in two forms: **requests** (sent by clients to servers) and **responses** (sent by servers to clients).  
+
 <details>
   <summary><strong>more</strong></summary>
  Structure:
@@ -278,6 +279,7 @@ An HTTP message is the communication format used in the HTTP protocol between a 
         { "username": "JohnDoe", "password": "1234" }
         ```
 </details>
+
 ## HTTP Request
 A client sends an HTTP request to perform an action, such as retrieving a webpage, submitting data, or querying an API.
 ## HTTP Response
