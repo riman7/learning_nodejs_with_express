@@ -260,6 +260,24 @@ func();
 
 # HTTP Message
 An HTTP message is the communication format used in the HTTP protocol between a client (e.g., browser, API consumer) and a server. It comes in two forms: **requests** (sent by clients to servers) and **responses** (sent by servers to clients).  
+<details>
+  <summary><strong>more</strong></summary>
+ Structure:
+    <b>Start Line:</b> Specifies the HTTP method (e.g., GET, POST), the target URL, and the HTTP version.
+    Headers: Provide metadata like the type of content being sent or accepted (Content-Type, Authorization).
+    <b>Blank Line:</b> Separates headers from the body.
+    <b>Body (Optional):</b> Includes data sent with methods like POST or PUT (e.g., form submissions or JSON payloads).
+
+    Example:
+        ```makefile
+        POST /login HTTP/1.1
+        Host: example.com
+        Content-Type: application/json
+        Content-Length: 27
+
+        { "username": "JohnDoe", "password": "1234" }
+        ```
+</details>
 ## HTTP Request
 A client sends an HTTP request to perform an action, such as retrieving a webpage, submitting data, or querying an API.
 ## HTTP Response
@@ -267,7 +285,7 @@ A client sends an HTTP request to perform an action, such as retrieving a webpag
 
 ---
 
-# HTTP Methods (In the Context of Node.js)
+# HTTP Methods
 
 In Node.js, HTTP methods are used to define the type of request a client makes to the server. These methods can be handled using the built-in `http` module or frameworks like Express.js. Below are the common HTTP methods and their usage in a Node.js server.
 
@@ -301,7 +319,7 @@ Using Express.js simplifies handling HTTP methods:
 
 ---
 
-## JavaScript Concepts and Solutions
+# JavaScript Concepts and Solutions
 
 <details>
   <summary><strong>What does the <code>new</code> keyword do in JavaScript?</strong></summary>
@@ -329,7 +347,7 @@ Using Express.js simplifies handling HTTP methods:
 
 ---
 
-## FAQ
+# FAQ
 
 <details>
   <summary><strong>What is this repository about?</strong></summary>
