@@ -257,6 +257,48 @@ func();
 [**CODE**](./basics/promise.js)
 
 ---
+
+# HTTP Message
+An HTTP message is the communication format used in the HTTP protocol between a client (e.g., browser, API consumer) and a server. It comes in two forms: **requests** (sent by clients to servers) and **responses** (sent by servers to clients).  
+## HTTP Request
+A client sends an HTTP request to perform an action, such as retrieving a webpage, submitting data, or querying an API.
+## HTTP Response
+ A server sends an HTTP response to inform the client about the outcome of the request and optionally includes data.
+
+# HTTP Methods (In the Context of Node.js)
+
+In Node.js, HTTP methods are used to define the type of request a client makes to the server. These methods can be handled using the built-in `http` module or frameworks like Express.js. Below are the common HTTP methods and their usage in a Node.js server.
+
+## Common HTTP Methods
+
+1. **GET**  
+   - **Purpose:** Retrieve data from the server.  
+2. **POST**  
+   - **Purpose:** Send data to the server to create a resource.  
+3. **PUT**  
+   - **Purpose:** Update an existing resource or create a new one.  
+4. **DELETE**  
+   - **Purpose:** Remove a resource from the server.  
+  
+### Using Express.js for HTTP Methods
+
+Using Express.js simplifies handling HTTP methods:
+
+1. **GET**
+
+   ``` javascript
+   const express = require('express');
+   const app = express();
+
+   app.get('/users', (req, res) => {
+     res.json([{ name: 'John Doe' }]);
+   });
+
+   app.listen(3000, () => console.log('Express server running on port 3000'));
+   ```
+
+---
+
 ## JavaScript Concepts and Solutions
 
 <details>
