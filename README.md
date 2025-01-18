@@ -51,6 +51,7 @@ This repository is organized into sections covering the following topics:
   - [Event Loop](#event-loop)
   - [Promises](#understanding-promises-in-javascriptpromise)
   - [Event]
+  - [Streams]
 
 ---
 
@@ -93,7 +94,7 @@ npm (Node Package Manager) is a tool that comes with Node.js, used to install, m
    http://localhost:3000
 ```
 
-## Check if npm is Installed
+### Check if npm is Installed
 In general, npm is bundled with Node.js, **so installing Node.js usually installs npm as well.**  
 You can verify if npm is installed by running the following command in the terminal:
 
@@ -101,7 +102,7 @@ You can verify if npm is installed by running the following command in the termi
 npm -v
 ```
 
-## Handling Errors
+### Handling Errors
 If you encounter an error like this:
 > "npm : cannot be loaded because running scripts is disabled on this system."
 It likely means that your system's PowerShell Execution Policy is set to restrict script execution, which prevents npm from running in PowerShell.
@@ -121,7 +122,7 @@ This change applies only to the current PowerShell session and does not permanen
 ### Reinstall Node.js (if npm is missing)
 If npm is not installed on your system, reinstall Node.js from the Node.js official website. npm will be included with the installation.
 
-##  Methods to Install npm Packages
+###  Methods to Install npm Packages
 1. ***Local Installation:***
 Installs the package in the current project directory and adds it to the node_modules folder. This is used for project-specific dependencies.
 ```bash
@@ -150,13 +151,13 @@ npm install
 ```
 will install all the dependency required for the project which are mentiones in the package.json file.
 
-## Uninstall npn package
+### Uninstall npn package
 ```bash
 npm uninstall <package-name>
 ```
 ---
 
-## Event loop
+# Event loop
 JavaScript is blocking, synchronous, and single-threaded by design. This means JavaScript normally executes code line by line in a single thread.
 However, in Node.js, the Event Loop enables non-blocking and asynchronous operations.
 - Asynchronous methods are offloaded to libuv during execution.
@@ -260,12 +261,9 @@ func();
 
 <details>
   <summary><strong>What does the <code>new</code> keyword do in JavaScript?</strong></summary>
-  The `new` keyword in JavaScript is used to create an instance of an object from a constructor function.  
-  It performs the following steps:
-  1. Creates a new empty object.
-  2. Sets the prototype of the new object to the prototype of the constructor function.
-  3. Calls the constructor function with the `this` keyword set to the new object.
-  4. Returns the new object unless the constructor explicitly returns a non-primitive value.
+  The `new` keyword in JavaScript is used to create an instance of an object from a constructor function.
+  It Creates object of the class.  
+  It is actually concept of OOP(Object-Oriented Programming).
 
   Example:
   ```javascript
@@ -275,6 +273,37 @@ func();
 
   const john = new Person("John");
   console.log(john.name); // Output: John
+
+  ```
+</details>
+
+<details>
+  <summary><strong>How event-emitter differ from function?</strong></summary>
+  In JavaScript, both EventEmitter and functions can be used to handle and manage logic, but they serve different purposes and are designed for different use cases.  
+  You would use an EventEmitter instead of a function when you need to handle multiple events or asynchronous behavior. A function executes synchronously and returns a result directly, while an EventEmitter allows you to emit events and have multiple listeners handle those events independently, enabling more complex, asynchronous workflows and decoupling the event producers from event consumers.
+</details>
+
+---
+
+## FAQ
+
+<details>
+  <summary><strong>What is this repository about?</strong></summary>
+  This repository is focused on learning Node.js and Express.js. It includes example code, explanations, and practice projects to help understand the concepts better.
+</details>
+
+<details>
+  <summary><strong>How do I run the project locally?</strong></summary>
+  1. Clone the repository: `git clone https://github.com/username/repo.git`  
+  2. Navigate to the project folder: `cd repo`  
+  3. Install dependencies: `npm install`  
+  4. Run the project: `npm start`
+</details>
+
+<details>
+  <summary><strong>Can I contribute to this repository?</strong></summary>
+  Yes, contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
+</details>
 
 ---
 
