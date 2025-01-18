@@ -265,6 +265,8 @@ A client sends an HTTP request to perform an action, such as retrieving a webpag
 ## HTTP Response
  A server sends an HTTP response to inform the client about the outcome of the request and optionally includes data.
 
+---
+
 # HTTP Methods (In the Context of Node.js)
 
 In Node.js, HTTP methods are used to define the type of request a client makes to the server. These methods can be handled using the built-in `http` module or frameworks like Express.js. Below are the common HTTP methods and their usage in a Node.js server.
