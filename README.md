@@ -265,14 +265,14 @@ An HTTP message is the communication format used in the HTTP protocol between a 
 A client sends an HTTP request to perform an action, such as retrieving a webpage, submitting data, or querying an API.
 <details>
   <summary><strong>more</strong></summary>
- Structure:
-    <b>Start Line:</b> Specifies the HTTP method (e.g., GET, POST), the target URL, and the HTTP version.
-    Headers: Provide metadata like the type of content being sent or accepted (Content-Type, Authorization).
-    <b>Blank Line:</b> Separates headers from the body.
-    <b>Body (Optional):</b> Includes data sent with methods like POST or PUT (e.g., form submissions or JSON payloads).
+ Structure:<br>
+    <b>Start Line:</b> Specifies the HTTP method (e.g., GET, POST), the target URL, and the HTTP version.<br>
+    Headers: Provide metadata like the type of content being sent or accepted (Content-Type, Authorization).<br>
+    <b>Blank Line:</b> Separates headers from the body.<br>
+    <b>Body (Optional):</b> Includes data sent with methods like POST or PUT (e.g., form submissions or JSON payloads).<br>
 
     Example:
-        ```makefile
+        ```
         POST /login HTTP/1.1
         Host: example.com
         Content-Type: application/json
@@ -284,6 +284,23 @@ A client sends an HTTP request to perform an action, such as retrieving a webpag
 
 ## HTTP Response
  A server sends an HTTP response to inform the client about the outcome of the request and optionally includes data.
+ <details>
+  <summary><strong>more</strong></summary>
+ Structure:<br>
+    <b>Status Line:</b> Includes the HTTP version, status code, and a short reason phrase (e.g., 200 OK, 404 Not Found).<br>
+    <b>Headers:</b> Metadata about the response (e.g., Content-Type, Content-Length).<br>
+    <b>Blank Line:</b> Separates headers from the body.<br>
+    <b>Body (Optional):</b> Contains the data requested, like an HTML page or JSON object.<br>
+
+    Example:
+        ```
+        HTTP/1.1 200 OK
+        Content-Type: text/html
+        Content-Length: 24
+
+        <h1>Welcome, John!</h1>
+        ```
+  </details>
 
 ---
 
