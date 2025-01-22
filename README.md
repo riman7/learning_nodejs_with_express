@@ -361,6 +361,8 @@ Express comes with some built-in middleware functions like
   ```
   used to serve static files (like CSS, JavaScript, and images) from the public directory.
 - body-parser
+- multer
+  used for uploading files.
 
 
 ---
