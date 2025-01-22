@@ -52,6 +52,10 @@ This repository is organized into sections covering the following topics:
   - [Promises](#understanding-promises-in-javascriptpromise)
   - [Event]
   - [Streams]
+  - [Express]
+  - [Middleware]
+  - [Postman]
+  - [Socket.io]
 
 ---
 
@@ -356,6 +360,11 @@ Using Express.js simplifies handling HTTP methods:
   console.log(john.name); // Output: John
 
   ```
+</details>
+
+<details>
+  <summary><strong>What is <code>__dirname</code> keyword?</strong></summary>
+  __dirname is a special variable in Node.js that represents the directory name of the current module (the current file's directory). It is a global variable that gives you the absolute path to the directory where the currently executing script is located.
 </details>
 
 <details>
