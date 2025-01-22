@@ -342,6 +342,29 @@ Using Express.js simplifies handling HTTP methods:
 
 ---
 
+# Middleware  
+Middleware in Express is a function that gets executed during the request-response cycle. It has access to the request (req), response (res), and the next middleware function in the application's request-response cycle.
+```
+app.use((req, res, next) => {
+  console.log(`${req.method} request made to ${req.url}`);
+  next(); // Pass control to the next middleware
+});
+```
+
+## Built-in and Third Party Middleware
+Express comes with some built-in middleware functions like 
+- express.json()
+- express.urlencoded()
+- express.static()
+  ```
+  app.use(express.static('public'));
+  ```
+  used to serve static files (like CSS, JavaScript, and images) from the public directory.
+- body-parser
+
+
+---
+
 # JavaScript Concepts and Solutions
 
 <details>
