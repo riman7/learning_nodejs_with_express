@@ -363,6 +363,8 @@ Express comes with some built-in middleware functions like
 - body-parser
 - multer
   used for uploading files.
+- express session
+- dotenv
 
 
 ---
