@@ -64,7 +64,7 @@ This repository is organized into sections covering the following topics:
 Here are some small projects included in this repository:
 
 ## Major Projects
-- [Live Chat App] (https://github.com/riman7/live-chat) 
+- [Live Chat App](https://github.com/riman7/live-chat) 
 
 ## Minor Projects
 > Will be updated soon...
